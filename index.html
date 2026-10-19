@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме | Фомин Андрей</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        (function () {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                document.documentElement.setAttribute('data-theme', savedTheme);
+            }
+        })();
+    </script>
+</head>
+<body>
+    <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Переключить тему">🌙</button>
+
+    <main class="resume-container">
+        <header>
+            <h1>Фомин Андрей</h1>
+            <p class="subtitle">HSE SPb, ADA&AI '30</p>
+            <div class="contacts">
+                <a href="mailto:afom2008@gmail.com">✉️ afom2008@gmail.com</a>
+                <a href="https://github.com/andrei-fomin-ada-ai" target="_blank" rel="noopener noreferrer">💻 https://github.com/andrei-fomin-ada-ai</a>
+                <a href="#">📍 Санкт-Петербург, Россия</a>
+            </div>
+        </header>
+
+        <section id="about">
+            <h2>Обо мне</h2>
+            <p class="about-text">
+                Ученик 1 курса ПАДИИ НИУ ВШЭ СПб. Люблю математику и программирование, хотел бы в будущем связать свою жизнь с программированием скорее всего, в области исксственного интеллекта, поэтому выбрал именно это направление в вузе. Люблю играть в компьютерные игры, но всегда буду рад активным играм типа футбола, волейбола итд.
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>Навыки</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">C++</span>
+                <span class="skill-tag">Git & GitHub</span>
+                <span class="skill-tag">HTML5/CSS/JS</span>
+            </div>
+        </section>
+
+        <section id="achievements">
+            <h2>Достижения</h2>
+            <ul class="achievements-list">
+                <li>100 баллов на ЕГЭ по математике</li>
+                <li>Победитель и призер перечневых олимпиад по математике</li>
+                <li>Участник региона по информаткие в 10 и 11 классе</li>
+                <li>Не знаю, что еще написать</li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>
